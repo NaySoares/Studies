@@ -1,15 +1,18 @@
 /*
-2) Implemente um método que inverta um array, não utilize métodos nativos do array.
-Entrada do método ([1,2,3,4]), Resultado do método: [4,3,2,1]
+Implement a method to invert the array, don’t use “Arr.reverse”
+
+The input of method: ([1, 2, 3, 4])
+The output of method: [4, 3, 2, 1]
 */
 
-//método nativo (?)
+//!method 1 (don't allowed)
+
 function reverseArray(arr) {  
-  const reverseArr = arr.slice(0).reverse(); //slice para não alterar o original
+  const reverseArr = arr.slice(0).reverse(); //*slice for preserve original array
   return reverseArr;
 }
 
-//método manual (?)
+//method 2
   function reverseArray2(arr) {
     const newArr = [];
     for (var i = 0, j = arr.length - 1; i < arr.length; i++, j--) {      

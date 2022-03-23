@@ -1,7 +1,8 @@
 /*
-3) Implemente um método que limpe os itens desnecessários de
-um array (false, undefined, strings vazias, zero, null).
-Entrada do método ([1,2,'', undefined]), Resultado do método: [1,2]
+Implement a method to clear the unnecessary items of the array (false, undefined, empty string, zero, null)
+
+The input of method: ([1, 2, ‘’, undefined])
+The output of method: [1, 2]
 */
 
 function arrayTruthy(arr) {
