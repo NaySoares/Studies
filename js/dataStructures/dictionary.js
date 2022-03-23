@@ -50,4 +50,20 @@ function Dictionary() {
     }
     return values
   }
+
+  this.getItems = function() {
+    return items
+  }
 }
+
+var dic = new Dictionary();
+
+dic.set('Maria', 'first wall')
+dic.set('Rose', 'second wall')
+dic.set('Sina', 'third wall')
+
+console.log(dic.has('Sina'))
+console.log(dic.size())
+console.log(dic.get('Maria'))
+console.log(dic.keys())
+dic.clear()
